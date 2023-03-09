@@ -31,7 +31,7 @@ public class TechproLoginPage {
        }
     @FindBy(id="exampleInputEmail1")
     public WebElement username;
-   @FindBy(id = "exampleInputEmail1")
+   @FindBy(id = "exampleInputPassword1")
     public WebElement password;
    @FindBy(xpath = "//*[text()='Submit']")
     public WebElement submit;

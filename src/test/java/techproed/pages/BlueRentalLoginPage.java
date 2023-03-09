@@ -6,15 +6,21 @@ import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 
 public class BlueRentalLoginPage {
-    public BlueRentalLoginPage(){
+    public BlueRentalLoginPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(name = "email")
+
+    @FindBy (id = "formBasicEmail")
     public WebElement emailBox;
 
-    @FindBy(name = "password")
+    @FindBy (id = "formBasicPassword")
     public WebElement passwordBox;
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy (css = "button[class='btn btn-primary']")
     public WebElement loginButton;
+
+    @FindBy (css = "div[role='alert']")
+    public WebElement error_message_1;
+
+
 }

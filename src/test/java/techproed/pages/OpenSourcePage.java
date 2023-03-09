@@ -15,7 +15,7 @@ public class OpenSourcePage {
 //    GELENEKSEL  : public WebElement username = Driver.getDriver().findElement(By.name("username"));
     @FindBy(name = "username")
     public WebElement username;
-    @FindBy(xpath = "//input[@name='password']")
+    @FindBy(id = "exampleInputPassword1")
     public WebElement password;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
